@@ -9,10 +9,10 @@ export default function About() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-brand-light-green to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">About Pulpe</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">About PulpE</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Founded on the belief that wellness should be accessible, delicious, and transformative, 
-            Pulpe is your partner in the journey toward optimal health and vitality.
+            PulpE is your partner in the journey toward optimal health and vitality.
           </p>
         </div>
       </section>
@@ -25,7 +25,7 @@ export default function About() {
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <div className="space-y-4 text-lg text-gray-600">
                 <p>
-                  Pulpe was born from a simple yet powerful vision: to make premium organic nutrition 
+                  PulpE was born from a simple yet powerful vision: to make premium organic nutrition 
                   accessible to everyone. Our founders, passionate about health and wellness, recognized 
                   the transformative power of cold-pressed juices and wanted to share this gift with the world.
                 </p>
@@ -36,7 +36,7 @@ export default function About() {
                   meticulous preparation, and unwavering dedication to your health.
                 </p>
                 <p>
-                  Today, Pulpe stands as a beacon of wellness in the community, helping thousands of 
+                  Today, PulpE stands as a beacon of wellness in the community, helping thousands of 
                   people discover the incredible benefits of organic, cold-pressed nutrition.
                 </p>
               </div>

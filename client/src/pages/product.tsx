@@ -110,9 +110,9 @@ export default function Product() {
 
             {/* Pricing */}
             <div className="flex items-center space-x-4">
-              <span className="text-3xl font-bold text-brand-green">${product.price}</span>
+              <span className="text-3xl font-bold text-brand-green">₹{product.price}</span>
               {product.originalPrice && (
-                <span className="text-xl text-gray-400 line-through">${product.originalPrice}</span>
+                <span className="text-xl text-gray-400 line-through">₹{product.originalPrice}</span>
               )}
             </div>
 
@@ -148,7 +148,7 @@ export default function Product() {
                 <ShoppingCart className="h-5 w-5 mr-2" />
                 {product.inStock ? "Add to Cart" : "Sold Out"}
               </Button>
-              <p className="text-sm text-gray-500 text-center">Free shipping on orders over $50</p>
+              <p className="text-sm text-gray-500 text-center">Free shipping on orders over ₹1499</p>
             </div>
 
             {/* Product Features */}

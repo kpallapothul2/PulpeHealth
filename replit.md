@@ -2,11 +2,14 @@
 
 ## Overview
 
-This is a full-stack juice bar e-commerce application called "Pulpe" built with a modern TypeScript stack. The application features a React frontend with a Node.js/Express backend, showcasing organic juices, smoothies, and wellness products. It uses a PostgreSQL database with Drizzle ORM for data persistence and includes a complete UI component system built with Radix UI and styled with Tailwind CSS.
+This is a full-stack juice bar e-commerce application called "PulpE" built with a modern TypeScript stack. The application features a React frontend with a Node.js/Express backend, showcasing organic juices, smoothies, and wellness products. It uses a PostgreSQL database with Drizzle ORM for data persistence and includes a complete UI component system built with Radix UI and styled with Tailwind CSS. The application is localized for the Indian market with INR pricing.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Brand name: PulpE (with capital E)
+Market: Indian market with INR pricing
+Domain: pixos.net
 
 ## System Architecture
 

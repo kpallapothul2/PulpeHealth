@@ -19,7 +19,7 @@ export function Hero() {
               <span className="text-brand-green"> Raw</span>
             </h1>
             <h2 className="text-2xl lg:text-3xl font-semibold text-gray-700 mb-8">
-              Think Healthy, Think <span className="text-brand-orange">Pulpe</span>
+              Think Healthy, Think <span className="text-brand-orange">PulpE</span>
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
               Experience wellness in every sip with our premium collection of cold-pressed juices, nutrient-packed smoothies, and transformative cleanse programs.

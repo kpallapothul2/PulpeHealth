@@ -23,7 +23,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <h1 className="text-2xl font-bold text-brand-green cursor-pointer">Pulpe</h1>
+              <h1 className="text-2xl font-bold text-brand-green cursor-pointer">PulpE</h1>
             </Link>
           </div>
           
@@ -32,15 +32,15 @@ export function Header() {
             <div className="ml-10 flex items-baseline space-x-8">
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href}>
-                  <a
-                    className={`px-3 py-2 text-sm font-medium transition-colors ${
+                  <span
+                    className={`px-3 py-2 text-sm font-medium transition-colors cursor-pointer ${
                       location === item.href
                         ? "text-brand-green"
                         : "text-gray-700 hover:text-brand-green"
                     }`}
                   >
                     {item.name}
-                  </a>
+                  </span>
                 </Link>
               ))}
             </div>
@@ -64,8 +64,8 @@ export function Header() {
                 <div className="flex flex-col space-y-4 mt-8">
                   {navigation.map((item) => (
                     <Link key={item.name} href={item.href}>
-                      <a
-                        className={`block px-3 py-2 text-base font-medium transition-colors ${
+                      <span
+                        className={`block px-3 py-2 text-base font-medium transition-colors cursor-pointer ${
                           location === item.href
                             ? "text-brand-green"
                             : "text-gray-700 hover:text-brand-green"
@@ -73,7 +73,7 @@ export function Header() {
                         onClick={() => setIsOpen(false)}
                       >
                         {item.name}
-                      </a>
+                      </span>
                     </Link>
                   ))}
                 </div>

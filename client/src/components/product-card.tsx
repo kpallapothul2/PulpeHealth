@@ -42,9 +42,9 @@ export function ProductCard({ product }: ProductCardProps) {
         )}
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-brand-green">${product.price}</span>
+            <span className="text-xl font-bold text-brand-green">₹{product.price}</span>
             {product.originalPrice && (
-              <span className="text-sm text-gray-400 line-through">${product.originalPrice}</span>
+              <span className="text-sm text-gray-400 line-through">₹{product.originalPrice}</span>
             )}
           </div>
           <Button 

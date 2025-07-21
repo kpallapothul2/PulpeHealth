@@ -7,7 +7,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-brand-green mb-4">Pulpe</h3>
+            <h3 className="text-2xl font-bold text-brand-green mb-4">PulpE</h3>
             <p className="text-gray-300 mb-4">
               Premium organic juices and smoothies crafted for your wellness journey. Experience the power of pure, natural nutrition.
             </p>
@@ -81,7 +81,7 @@ export function Footer() {
         
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">&copy; 2024 Pulpe. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">&copy; 2024 PulpE. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-brand-green text-sm transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-brand-green text-sm transition-colors">Terms of Service</a>
