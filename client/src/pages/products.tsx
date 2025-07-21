@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useLocation } from "wouter";
-import { ProductCard } from "@/components/product-card";
-import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
-import { Input } from "@/components/ui/input";
+import { ProductCard } from "../components/product-card";
+import { Button } from "../components/ui/button";
+import { Skeleton } from "../components/ui/skeleton";
+import { Input } from "../components/ui/input";
 import { Search } from "lucide-react";
-import { fetchProducts, fetchProductsByCategory } from "@/lib/api";
+import { fetchProducts, fetchProductsByCategory } from "../lib/api";
 
 export default function Products() {
   const [location] = useLocation();

@@ -1,12 +1,12 @@
 import { useParams } from "wouter";
 import { useQuery } from "@tanstack/react-query";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Skeleton } from "@/components/ui/skeleton";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "../components/ui/button";
+import { Badge } from "../components/ui/badge";
+import { Skeleton } from "../components/ui/skeleton";
+import { Card, CardContent } from "../components/ui/card";
 import { ArrowLeft, ShoppingCart, Star, Leaf, Heart, Clock } from "lucide-react";
 import { Link } from "wouter";
-import { fetchProductBySlug } from "@/lib/api";
+import { fetchProductBySlug } from "../lib/api";
 
 export default function Product() {
   const { slug } = useParams();

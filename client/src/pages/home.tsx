@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
-import { Hero } from "@/components/hero";
-import { ProductCard } from "@/components/product-card";
-import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Hero } from "../components/hero";
+import { ProductCard } from "../components/product-card";
+import { Button } from "../components/ui/button";
+import { Skeleton } from "../components/ui/skeleton";
 import { Link } from "wouter";
-import { fetchFeaturedProducts } from "@/lib/api";
+import { fetchFeaturedProducts } from "../lib/api";
 import { Leaf, Heart, Clock, Shield, Award, Sprout } from "lucide-react";
 
 export default function Home() {

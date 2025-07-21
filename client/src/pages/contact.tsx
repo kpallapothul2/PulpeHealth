@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { useToast } from "@/hooks/use-toast";
+import { Button } from "../components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+import { Input } from "../components/ui/input";
+import { Textarea } from "../components/ui/textarea";
+import { Label } from "../components/ui/label";
+import { useToast } from "../hooks/use-toast";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter } from "lucide-react";
-import { submitContactForm } from "@/lib/api";
+import { submitContactForm } from "../lib/api";
 import type { InsertContact } from "@shared/schema";
 
 export default function Contact() {
