@@ -71,7 +71,7 @@ export class MemStorage implements IStorage {
         originalPrice: null,
         calories: 34,
         category: "shots",
-        imageUrl: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+        imageUrl: "https://glassmania.com/media/wysiwyg/Couverture-Ginger-shot.jpg",
         ingredients: ["ginger", "turmeric", "apple"],
         featured: true,
         inStock: true,
