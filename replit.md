@@ -49,9 +49,9 @@ Domain: pixos.net
 
 ### Storage Layer (`server/storage.ts`)
 - Abstract storage interface (`IStorage`) for database operations
-- In-memory storage implementation for development/testing
-- Prepared for database storage implementation
-- Pre-populated with sample juice/smoothie products
+- **DatabaseStorage implementation** using PostgreSQL with Drizzle ORM
+- Database connection setup in `server/db.ts` using Neon serverless PostgreSQL
+- Pre-populated with 12 premium juice/smoothie products and cleanse programs
 
 ### Frontend Pages
 - **Home**: Hero section with featured products and company branding
@@ -112,4 +112,12 @@ Domain: pixos.net
 - `db:push` command for development schema updates
 - PostgreSQL dialect with connection string configuration
 
-The application follows a clean separation of concerns with shared TypeScript types between client and server, ensuring type safety across the full stack. The architecture supports both development flexibility and production deployment requirements.
+## Recent Changes
+
+### Database Integration (January 2025)
+- **Added PostgreSQL database** with Neon serverless connection
+- **Migrated from in-memory storage** to DatabaseStorage implementation
+- **Seeded database** with 12 premium products (juices ₹458-₹598, smoothies ₹398-₹518, shots ₹198, cleanses ₹3198-₹7998)
+- **Database schema** includes products, contacts, and users tables with full type safety
+
+The application follows a clean separation of concerns with shared TypeScript types between client and server, ensuring type safety across the full stack. The architecture supports both development flexibility and production deployment requirements with persistent data storage.
