@@ -1,5 +1,5 @@
 {
-  "buildCommand": "mkdir -p client/src/data && cp products.json client/src/data/ && npm run build:client",
+  "buildCommand": "npm run build:client",
   "outputDirectory": "dist",
   "rewrites": [
     {
@@ -15,5 +15,8 @@
     "api/**/*.ts": {
       "includeFiles": "shared/schema.ts"
     }
-  }
+  },
+  "includeFiles": [
+    "client/src/data/**"
+  ]
 }
