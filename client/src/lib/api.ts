@@ -1,6 +1,6 @@
 import type { Product, InsertContact } from "@shared/schema";
 // @ts-ignore - JSON import handled by Vite
-import productsData from "@/data/products.json";
+import productsData from "../data/products.json";
 import { apiRequest } from "./queryClient";
 
 const products: Product[] = productsData as Product[];
