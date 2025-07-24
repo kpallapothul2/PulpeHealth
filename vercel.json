@@ -15,8 +15,5 @@
     "api/**/*.ts": {
       "includeFiles": "shared/schema.ts"
     }
-  },
-  "includeFiles": [
-    "client/src/data/**"
-  ]
+  }
 }

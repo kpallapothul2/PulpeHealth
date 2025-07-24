@@ -3,8 +3,31 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 import path from "path";
 import { fileURLToPath } from "url";
+import fs from "fs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+// Custom plugin to copy data directory
+function copyDataPlugin() {
+  return {
+    name: 'copy-data',
+    buildStart() {
+      const srcDir = path.resolve(__dirname, 'client/src/data');
+      const destDir = path.resolve(__dirname, 'dist/data');
+      
+      if (fs.existsSync(srcDir)) {
+        fs.mkdirSync(destDir, { recursive: true });
+        const files = fs.readdirSync(srcDir);
+        files.forEach(file => {
+          fs.copyFileSync(
+            path.resolve(srcDir, file),
+            path.resolve(destDir, file)
+          );
+        });
+      }
+    }
+  };
+}
 
 export default defineConfig({
   plugins: [
@@ -32,7 +55,8 @@ export default defineConfig({
           }
         ]
       }
-    })
+    }),
+    copyDataPlugin()
   ],
   root: "client",
   build: {
