@@ -1,9 +1,176 @@
 import type { Product, InsertContact } from "@shared/schema";
-// @ts-ignore - JSON import handled by Vite
-import productsData from "../data/products.json";
 import { apiRequest } from "./queryClient";
 
-const products: Product[] = productsData as Product[];
+const products: Product[] = [
+  {
+    id: 1,
+    name: "Oh My Greens",
+    slug: "oh-my-greens",
+    description: "A zesty super-green blend packed with nutrients and designed to energize your day. Contains kale, spinach, apple, lemon, and cucumber.",
+    price: "498.00",
+    originalPrice: null,
+    calories: 80,
+    category: "juices",
+    imageUrl: "https://images.unsplash.com/photo-1610970881699-44a5587cabec?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    ingredients: ["kale", "spinach", "apple", "lemon", "cucumber"],
+    featured: true,
+    inStock: true
+  },
+  {
+    id: 2,
+    name: "Rise and Shine",
+    slug: "rise-and-shine",
+    description: "Eye-opening blend of carrots, oranges, apple and lemon designed to promote eye health and provide natural energy.",
+    price: "398.00",
+    originalPrice: null,
+    calories: 130,
+    category: "juices",
+    imageUrl: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    ingredients: ["carrots", "oranges", "apple", "lemon"],
+    featured: true,
+    inStock: true
+  },
+  {
+    id: 3,
+    name: "Immune Shot",
+    slug: "immune-shot",
+    description: "Healthful, invigorating kick with ginger, turmeric and apple to boost immunity and provide natural wellness support.",
+    price: "198.00",
+    originalPrice: null,
+    calories: 34,
+    category: "shots",
+    imageUrl: "https://glassmania.com/media/wysiwyg/Couverture-Ginger-shot.jpg",
+    ingredients: ["ginger", "turmeric", "apple"],
+    featured: true,
+    inStock: true
+  },
+  {
+    id: 4,
+    name: "Lovely Red",
+    slug: "lovely-red",
+    description: "Vibrant blend of beets, cucumber, apple with refreshing taste and powerful nutrients for cardiovascular health.",
+    price: "458.00",
+    originalPrice: null,
+    calories: 100,
+    category: "juices",
+    imageUrl: "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    ingredients: ["beets", "cucumber", "apple"],
+    featured: false,
+    inStock: true
+  },
+  {
+    id: 5,
+    name: "Pink Dragon",
+    slug: "pink-dragon",
+    description: "Dragon fruit, pineapple, banana with almond milk base for tropical refreshment and antioxidant power.",
+    price: "378.00",
+    originalPrice: null,
+    calories: 180,
+    category: "smoothies",
+    imageUrl: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    ingredients: ["dragon fruit", "pineapple", "banana", "almond milk"],
+    featured: false,
+    inStock: true
+  },
+  {
+    id: 6,
+    name: "Ever Green",
+    slug: "ever-green",
+    description: "Mango, pineapple, kale, spinach and figs with almond milk base for the perfect green smoothie experience.",
+    price: "418.00",
+    originalPrice: null,
+    calories: 150,
+    category: "smoothies",
+    imageUrl: "https://images.unsplash.com/photo-1638176066666-ffb2f013c7dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    ingredients: ["mango", "pineapple", "kale", "spinach", "figs", "almond milk"],
+    featured: false,
+    inStock: true
+  },
+  {
+    id: 7,
+    name: "3-Day Juice Cleanse",
+    slug: "3-day-juice-cleanse",
+    description: "Complete 3-day detox with 22 bottles of fresh juices for full body cleansing and rejuvenation.",
+    price: "4998.00",
+    originalPrice: "6198.00",
+    calories: null,
+    category: "cleanses",
+    imageUrl: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    ingredients: ["fresh cold-pressed juices"],
+    featured: true,
+    inStock: true
+  },
+  {
+    id: 8,
+    name: "Vegan Protein Shake",
+    slug: "vegan-protein-shake",
+    description: "Protein in chocolate or vanilla flavor with bananas and almond milk base for post-workout nutrition.",
+    price: "498.00",
+    originalPrice: null,
+    calories: 220,
+    category: "smoothies",
+    imageUrl: "https://i0.wp.com/laurenvacula.com/wp-content/uploads/2022/07/IMG_4993-2.jpg?resize=768%2C1024&ssl=1",
+    ingredients: ["plant protein", "bananas", "almond milk"],
+    featured: true,
+    inStock: true
+  },
+  {
+    id: 9,
+    name: "Mean Green",
+    slug: "mean-green",
+    description: "Robust blend of parsley, celery, cucumber, cilantro, apple and lemon packed with nutrients and health benefits.",
+    price: "438.00",
+    originalPrice: null,
+    calories: 60,
+    category: "juices",
+    imageUrl: "https://images.unsplash.com/photo-1610970881699-44a5587cabec?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    ingredients: ["parsley", "celery", "cucumber", "cilantro", "apple", "lemon"],
+    featured: false,
+    inStock: true
+  },
+  {
+    id: 10,
+    name: "Cool as a Cucumber",
+    slug: "cool-as-a-cucumber",
+    description: "Refreshing mix of cucumber, orange, apple and lemon designed to lower blood pressure and promote healthy digestion.",
+    price: "358.00",
+    originalPrice: null,
+    calories: 100,
+    category: "juices",
+    imageUrl: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    ingredients: ["cucumber", "orange", "apple", "lemon"],
+    featured: false,
+    inStock: true
+  },
+  {
+    id: 11,
+    name: "Island Breeze Smoothie",
+    slug: "island-breeze-smoothie",
+    description: "Tropical smoothie with strawberries, pineapple, bananas and almond milk base for a taste of paradise.",
+    price: "338.00",
+    originalPrice: null,
+    calories: 160,
+    category: "smoothies",
+    imageUrl: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    ingredients: ["strawberries", "pineapple", "bananas", "almond milk"],
+    featured: false,
+    inStock: true
+  },
+  {
+    id: 12,
+    name: "1-Day Juice Cleanse",
+    slug: "1-day-juice-cleanse",
+    description: "Perfect introduction to cleansing with 8 bottles of fresh juices for a gentle one-day reset.",
+    price: "2198.00",
+    originalPrice: "2598.00",
+    calories: null,
+    category: "cleanses",
+    imageUrl: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    ingredients: ["fresh cold-pressed juices"],
+    featured: false,
+    inStock: true
+  }
+];
 
 export async function fetchProducts(): Promise<Product[]> {
   return products;
