@@ -155,7 +155,7 @@ export default function Product() {
             <div className="grid grid-cols-3 gap-4">
               <div className="text-center p-4 bg-brand-light-green rounded-lg">
                 <Leaf className="h-6 w-6 text-brand-green mx-auto mb-2" />
-                <p className="text-sm font-medium text-brand-green">100% Organic</p>
+                <p className="text-sm font-medium text-brand-green">Farm-Fresh</p>
               </div>
               <div className="text-center p-4 bg-brand-light-green rounded-lg">
                 <Clock className="h-6 w-6 text-brand-green mx-auto mb-2" />

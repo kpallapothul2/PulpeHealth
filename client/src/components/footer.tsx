@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-bold text-brand-green mb-4">PulpE</h3>
-            <p className="text-gray-300 mb-4">
-              Premium organic juices and smoothies crafted for your wellness journey. Experience the power of pure, natural nutrition.
+            <p className="text-gray-400 max-w-sm">
+              Premium fresh juices and smoothies crafted for your wellness journey. Experience the power of pure, natural nutrition.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-brand-green transition-colors">

@@ -3,12 +3,15 @@ import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Link } from "wouter";
 import type { Product } from "@shared/schema";
+import { useCartStore } from "../lib/store";
 
 interface ProductCardProps {
   product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {
+  const addItem = useCartStore((state) => state.addItem);
+
   return (
     <Card className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
       <div className="relative">
@@ -40,16 +43,17 @@ export function ProductCard({ product }: ProductCardProps) {
         {product.calories && (
           <p className="text-xs text-gray-500 mb-4">{product.calories} Calories</p>
         )}
-        <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-2">
+        <div className="flex flex-col space-y-3">
+          <div className="flex items-baseline space-x-2">
             <span className="text-xl font-bold text-brand-green">₹{product.price}</span>
             {product.originalPrice && (
               <span className="text-sm text-gray-400 line-through">₹{product.originalPrice}</span>
             )}
           </div>
           <Button 
-            className="bg-brand-orange hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+            className="w-full bg-brand-orange hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-medium transition-colors"
             disabled={!product.inStock}
+            onClick={() => addItem(product)}
           >
             {product.inStock ? "Add to Cart" : "Sold Out"}
           </Button>

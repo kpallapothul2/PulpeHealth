@@ -49,8 +49,8 @@ export default function Products() {
       <div className="bg-brand-green text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold mb-4">Our Products</h1>
-          <p className="text-xl text-green-100 max-w-2xl mx-auto">
-            Discover our complete collection of organic juices, smoothies, and wellness products designed to nourish your body and soul.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Discover our complete collection of fresh juices, smoothies, and wellness products designed to nourish your body and soul.
           </p>
         </div>
       </div>

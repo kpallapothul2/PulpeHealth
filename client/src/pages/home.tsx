@@ -50,7 +50,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Products</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover our most popular cold-pressed juices, smoothies, and wellness shots crafted with premium organic ingredients.
+              Discover our most popular cold-pressed juices, smoothies, and wellness shots crafted with premium fresh ingredients.
             </p>
           </div>
           
@@ -86,7 +86,7 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Transform Your Health with Our Juice Cleanses</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Reset your body and mind with our scientifically crafted juice cleanse programs. Each cleanse is designed to detoxify, energize, and rejuvenate your system with premium organic ingredients.
+                Reset your body and mind with our scientifically crafted juice cleanse programs. Each cleanse is designed to detoxify, energize, and rejuvenate your system with premium fresh ingredients.
               </p>
               
               <div className="space-y-6">
@@ -95,8 +95,8 @@ export default function Home() {
                     <Leaf className="text-brand-green h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">100% Organic Ingredients</h3>
-                    <p className="text-gray-600">Every bottle contains only the finest organic fruits and vegetables, cold-pressed to preserve maximum nutrients.</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Fresh Ingredients</h3>
+                    <p className="text-gray-600">Every bottle contains hand-selected fruits and vegetables, cold-pressed to preserve maximum nutrients.</p>
                   </div>
                 </div>
                 
@@ -154,7 +154,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Pulpe?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're committed to bringing you the highest quality organic juices and smoothies that nourish your body and elevate your wellness journey.
+              We're committed to bringing you the highest quality fresh juices and smoothies that nourish your body and elevate your wellness journey.
             </p>
           </div>
           
@@ -163,8 +163,8 @@ export default function Home() {
               <div className="bg-brand-light-green p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
                 <Sprout className="text-brand-green h-8 w-8" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Organic & Fresh</h3>
-              <p className="text-gray-600">Every ingredient is sourced from certified organic farms and cold-pressed within hours of harvest to preserve maximum nutrition and flavor.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Fresh & Natural</h3>
+              <p className="text-gray-600">Every ingredient is sourced from trusted farms and cold-pressed within hours of harvest to preserve maximum nutrition and flavor.</p>
             </div>
             
             <div className="text-center">

@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, ShoppingCart } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Cart } from "./cart";
 
 export function Header() {
   const [location] = useLocation();
@@ -48,10 +49,7 @@ export function Header() {
           
           {/* Cart and Mobile menu */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="text-gray-700 hover:text-brand-green">
-              <ShoppingCart className="h-5 w-5" />
-              <span className="ml-1 text-sm">Cart (0)</span>
-            </Button>
+            <Cart />
             
             {/* Mobile menu */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
