@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run vercel-build",
+  "buildCommand": "mkdir -p client/src/data && cp products.json client/src/data/ && npm run build:client",
   "outputDirectory": "dist",
   "rewrites": [
     {
