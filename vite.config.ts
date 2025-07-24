@@ -32,25 +32,17 @@ export default defineConfig({
           }
         ]
       }
-    }),
-    // Remove Replit-specific plugins for Vercel deployment
+    })
   ],
+  root: "client",
+  build: {
+    outDir: "../dist",
+    emptyOutDir: true
+  },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "client", "src"),
-      "@shared": path.resolve(__dirname, "shared"),
-      "@assets": path.resolve(__dirname, "attached_assets"),
-    },
-  },
-  root: path.resolve(__dirname, "client"),
-  build: {
-    outDir: "dist",
-    emptyOutDir: true,
-  },
-  server: {
-    fs: {
-      strict: true,
-      deny: ["**/.*"],
-    },
-  },
+      "@": path.resolve(__dirname, "client/src"),
+      "@shared": path.resolve(__dirname, "shared")
+    }
+  }
 });
