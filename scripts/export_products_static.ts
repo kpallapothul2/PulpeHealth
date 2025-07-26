@@ -1,5 +1,3 @@
-import { db } from "../server/db";
-import { products } from "../shared/schema";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -18,6 +16,10 @@ async function exportProducts() {
       }
       throw new Error("No DATABASE_URL and no existing products.json found");
     }
+
+    // Only import database modules if DATABASE_URL is set
+    const { db } = await import("../server/db");
+    const { products } = await import("../shared/schema");
 
     // Get products from database
     const rows = await db.select().from(products);
