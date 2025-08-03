@@ -12,7 +12,7 @@
     "check": "tsc",
     "db:push": "drizzle-kit push",
     "generate:products": "tsx scripts/export_products_static.ts",
-    "vercel-build": "npm run generate:products && vite build"
+    "vercel-build": "npm run db:push && npx tsx scripts/seed-products.ts && npm run generate:products && vite build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
