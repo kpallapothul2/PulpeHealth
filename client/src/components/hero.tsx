@@ -14,11 +14,11 @@ export function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4">
               Fresh. Vibrant.
               <span className="text-brand-green"> Raw</span>
             </h1>
-            <h2 className="text-2xl lg:text-3xl font-semibold text-gray-700 mb-8">
+            <h2 className="text-3xl lg:text-4xl font-semibold text-gray-700 mb-8">
               Think Healthy, Think <span className="text-brand-orange">PulpE</span>
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
@@ -26,7 +26,7 @@ export function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link href="/products">
-                <Button size="lg" className="bg-brand-green hover:bg-brand-dark-green text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl">
+                <Button size="lg" className="bg-gradient-to-br from-brand-green to-brand-dark-green hover:from-brand-dark-green hover:to-brand-green text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   See Our Menu
                 </Button>
               </Link>
@@ -34,7 +34,7 @@ export function Hero() {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-2 border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white px-8 py-4 rounded-full font-semibold text-lg"
+                  className="border-2 border-brand-orange text-brand-orange hover:bg-gradient-to-br hover:from-brand-orange hover:to-brand-orange hover:text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Learn More
                 </Button>

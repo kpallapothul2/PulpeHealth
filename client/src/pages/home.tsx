@@ -18,27 +18,27 @@ export default function Home() {
       <Hero />
       
       {/* Featured Banner */}
-      <section className="bg-brand-green text-white py-16 relative overflow-hidden">
-        <div className="whitespace-nowrap animate-scroll">
-          <span className="text-4xl font-bold mr-16">WELLNESS IN EVERY SIP, THAT'S PULPE.</span>
-          <span className="text-4xl font-bold mr-16">WELLNESS IN EVERY SIP, THAT'S PULPE.</span>
-          <span className="text-4xl font-bold mr-16">WELLNESS IN EVERY SIP, THAT'S PULPE.</span>
+      <section className="bg-gradient-to-br from-brand-green to-brand-dark-green text-white py-20 relative overflow-hidden">
+        <div className="whitespace-nowrap animate-scroll-fast">
+          <span className="text-5xl font-extrabold mr-24 tracking-wide">FRESHNESS DELIVERED, WELLNESS ELEVATED.</span>
+          <span className="text-5xl font-extrabold mr-24 tracking-wide">FRESHNESS DELIVERED, WELLNESS ELEVATED.</span>
+          <span className="text-5xl font-extrabold mr-24 tracking-wide">FRESHNESS DELIVERED, WELLNESS ELEVATED.</span>
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-          <h3 className="text-center text-lg font-semibold mb-8 opacity-90">As Featured In</h3>
-          <div className="flex justify-center items-center space-x-12 opacity-75">
-            <div className="w-20 h-12 bg-white bg-opacity-20 rounded flex items-center justify-center">
-              <span className="text-sm font-medium">HEALTH</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+          <h3 className="text-center text-xl font-bold mb-10 text-white/90">Trusted by Leading Publications</h3>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80">
+            <div className="flex flex-col items-center p-3 bg-white/10 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <span className="text-lg font-semibold">HEALTH</span>
             </div>
-            <div className="w-20 h-12 bg-white bg-opacity-20 rounded flex items-center justify-center">
-              <span className="text-sm font-medium">VOGUE</span>
+            <div className="flex flex-col items-center p-3 bg-white/10 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <span className="text-lg font-semibold">VOGUE</span>
             </div>
-            <div className="w-20 h-12 bg-white bg-opacity-20 rounded flex items-center justify-center">
-              <span className="text-sm font-medium">WELLNESS</span>
+            <div className="flex flex-col items-center p-3 bg-white/10 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <span className="text-lg font-semibold">WELLNESS</span>
             </div>
-            <div className="w-20 h-12 bg-white bg-opacity-20 rounded flex items-center justify-center">
-              <Leaf className="text-lg" />
+            <div className="flex flex-col items-center p-3 bg-white/10 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <Leaf className="h-8 w-8 text-white" />
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function Home() {
           
           <div className="text-center mt-12">
             <Link href="/products">
-              <Button size="lg" className="bg-brand-green hover:bg-brand-dark-green text-white px-8 py-3 rounded-full font-semibold text-lg shadow-lg">
+              <Button size="lg" className="bg-gradient-to-br from-brand-green to-brand-dark-green hover:from-brand-dark-green hover:to-brand-green text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 View All Products
               </Button>
             </Link>
@@ -83,16 +83,16 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+            <div className="lg:order-2">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Transform Your Health with Our Juice Cleanses</h2>
               <p className="text-lg text-gray-600 mb-8">
                 Reset your body and mind with our scientifically crafted juice cleanse programs. Each cleanse is designed to detoxify, energize, and rejuvenate your system with premium fresh ingredients.
               </p>
               
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-brand-light-green p-2 rounded-full">
-                    <Leaf className="text-brand-green h-5 w-5" />
+                <div className="flex items-start space-x-4 group">
+                  <div className="bg-brand-light-green p-3 rounded-full transition-all duration-300 group-hover:bg-brand-green">
+                    <Leaf className="text-brand-green h-6 w-6 transition-all duration-300 group-hover:text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Fresh Ingredients</h3>
@@ -100,9 +100,9 @@ export default function Home() {
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-brand-light-green p-2 rounded-full">
-                    <Heart className="text-brand-green h-5 w-5" />
+                <div className="flex items-start space-x-4 group">
+                  <div className="bg-brand-light-green p-3 rounded-full transition-all duration-300 group-hover:bg-brand-green">
+                    <Heart className="text-brand-green h-6 w-6 transition-all duration-300 group-hover:text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Scientifically Designed</h3>
@@ -110,9 +110,9 @@ export default function Home() {
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-brand-light-green p-2 rounded-full">
-                    <Clock className="text-brand-green h-5 w-5" />
+                <div className="flex items-start space-x-4 group">
+                  <div className="bg-brand-light-green p-3 rounded-full transition-all duration-300 group-hover:bg-brand-green">
+                    <Clock className="text-brand-green h-6 w-6 transition-all duration-300 group-hover:text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Flexible Programs</h3>
@@ -123,24 +123,24 @@ export default function Home() {
               
               <div className="mt-8">
                 <Link href="/products?category=cleanses">
-                  <Button size="lg" className="bg-brand-orange hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg">
+                  <Button size="lg" className="bg-gradient-to-br from-brand-orange to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300">
                     Explore Cleanse Programs
                   </Button>
                 </Link>
               </div>
             </div>
             
-            <div className="relative">
+            <div className="relative lg:order-1">
               <img 
                 src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
                 alt="Juice cleanse collection with various organic juices" 
-                className="rounded-2xl shadow-2xl w-full" 
+                className="rounded-2xl shadow-2xl w-full transform scale-105 hover:scale-110 transition-transform duration-500" 
               />
               
-              <div className="absolute top-4 right-4 bg-white text-brand-green px-4 py-2 rounded-full text-sm font-semibold shadow-lg border-2 border-brand-green">
+              <div className="absolute top-4 right-4 bg-white text-brand-green px-4 py-2 rounded-full text-sm font-semibold shadow-lg border-2 border-brand-green animate-float">
                 22 Bottles
               </div>
-              <div className="absolute bottom-4 left-4 bg-brand-orange text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+              <div className="absolute bottom-4 left-4 bg-brand-orange text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-float" style={{ animationDelay: "2s" }}>
                 3-Day Program
               </div>
             </div>
@@ -152,32 +152,32 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Pulpe?</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-5xl font-bold text-gray-900 mb-6">Why Choose Pulpe?</h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               We're committed to bringing you the highest quality fresh juices and smoothies that nourish your body and elevate your wellness journey.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            <div className="text-center">
-              <div className="bg-brand-light-green p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Sprout className="text-brand-green h-8 w-8" />
+            <div className="text-center group">
+              <div className="bg-brand-light-green p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center transition-all duration-300 group-hover:bg-brand-green">
+                <Sprout className="text-brand-green h-8 w-8 transition-all duration-300 group-hover:text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Fresh & Natural</h3>
               <p className="text-gray-600">Every ingredient is sourced from trusted farms and cold-pressed within hours of harvest to preserve maximum nutrition and flavor.</p>
             </div>
             
-            <div className="text-center">
-              <div className="bg-brand-light-green p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Shield className="text-brand-green h-8 w-8" />
+            <div className="text-center group">
+              <div className="bg-brand-light-green p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center transition-all duration-300 group-hover:bg-brand-green">
+                <Shield className="text-brand-green h-8 w-8 transition-all duration-300 group-hover:text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">No Preservatives</h3>
               <p className="text-gray-600">Our juices contain zero artificial preservatives, additives, or sugars - just pure, natural goodness in every bottle.</p>
             </div>
             
-            <div className="text-center">
-              <div className="bg-brand-light-green p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Award className="text-brand-green h-8 w-8" />
+            <div className="text-center group">
+              <div className="bg-brand-light-green p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center transition-all duration-300 group-hover:bg-brand-green">
+                <Award className="text-brand-green h-8 w-8 transition-all duration-300 group-hover:text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Award Winning</h3>
               <p className="text-gray-600">Recognized by leading wellness publications and trusted by health professionals for our commitment to quality and nutrition.</p>

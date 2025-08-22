@@ -13,7 +13,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const addItem = useCartStore((state) => state.addItem);
 
   return (
-    <Card className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+    <Card className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl hover:border hover:border-brand-green transition-all duration-300 group">
       <div className="relative">
         <img 
           src={product.imageUrl} 
@@ -51,7 +51,7 @@ export function ProductCard({ product }: ProductCardProps) {
             )}
           </div>
           <Button 
-            className="w-full bg-brand-orange hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+            className="w-full bg-gradient-to-br from-brand-orange to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white px-4 py-2 rounded-lg font-medium transition-colors shadow-md hover:shadow-lg"
             disabled={!product.inStock}
             onClick={() => addItem(product)}
           >
